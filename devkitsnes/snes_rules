@@ -69,8 +69,8 @@ CFLAGS += -I$(DEVKIT65XX)/include
 %.sfc:
 	@echo Linking ... $(notdir $@)
 	$(LD) -dsnov $(OFILES) $(LIBOBJS) $@
-	@sed 's/://' <$(TARGET).sym >$(TARGET).tmp
-	@mv $(TARGET).tmp $(TARGET).sym
+	@sed 's/://' <$(OUTPUT).sym >$(OUTPUT).tmp
+	@mv $(OUTPUT).tmp $(OUTPUT).sym
 
 #---------------------------------------------------------------------------------
 %.pic: %.bmp
