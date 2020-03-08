@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wine $DEVKIT65XX/tools/snesbrr.exe "$@"
